@@ -1,17 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Cosmetics Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #7c3aed;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        iframe {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            width: 90%;
+            height: 700px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        iframe:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-top: -10px;
+            padding: 0 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #eee;
+            margin-top: 40px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            iframe {
+                height: 500px;
+            }
+
+            .description {
+                font-size: 1rem;
+                padding: 0 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align:center;">Cosmetics Dashboard</h1>
-    <iframe src="https://public.tableau.com/views/projectcosmetics/Story1?:embed=y&:display_count=yes&:showVizHome=no"
-        width="1000"
-        height="800"
-        frameborder="0"
-        allowfullscreen></iframe>
-    <p style="text-align:center;">This dashboard provides insights into the cosmetics industry, including trends, sales data, and market analysis.</p>
-    <footer style="text-align:center;">
-        <p>Created by Kappara Lakshmi Sindhu</p>
+    <header>
+        <h1>💄 Cosmetics Dashboard</h1>
+    </header>
+
+    <div class="iframe-container">
+        <iframe 
+            src="https://public.tableau.com/views/projectcosmetics/Story1?:embed=y&:display_count=yes&:showVizHome=no"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="description">
+        <p>This interactive dashboard offers insights into brand performance, skin suitability, product ranking, and more — using real cosmetics data visualized in Tableau.</p>
+    </div>
+
+    <footer>
+        Created by Kappara Lakshmi Sindhu | © 2025
+    </footer>
 </body>
 </html>
