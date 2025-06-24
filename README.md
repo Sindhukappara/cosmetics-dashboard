@@ -45,8 +45,8 @@ Tableau Public link:
 
 ## 🖼️ Screenshots
 
-<img src="images/dashboard1.png" width="400"/>  
-<img src="images/dashboard2.png" width="400"/>
+<img src="images/dashboard 1.png" width="400"/>  
+<img src="images/dashboard 2.png" width="400"/>
 
 
 ## 🛠 Tools Used
@@ -59,6 +59,6 @@ Tableau Public link:
 ## 🚀 How to Run This Project Locally
 
 ```bash
-git clone https://github.com/yourusername/Cosmetics-Flask-Tableau.git
+git clone https://github.com/Sindhukappara/cosmetics-dashboard.git
 cd Cosmetics-Flask-Tableau
 python app.py
